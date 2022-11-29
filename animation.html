@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Cute Emojies</title>
+    <style media="screen">
+    /* emoji1 style*/
+     .emoji1{
+       width: 160px;
+       height: 160px;
+       display: inline-block;
+       position: relative;
+       top: 25px;
+       left: 0px;
+       background: url('images/emotions.png');
+     }
+     .emoji-m {
+       width: 160px;
+       height: 160px;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: url('images/emotions.png');
+       background-position: -160px 0;
+     }
+     .emoji-e {
+       width: 160px;
+       height: 160px;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: url('images/emotions.png');
+       background-position: -640px 0;
+     }
+     .mouth {
+       animation: mouth 1s steps(1) alternate infinite;
+     }
+     .eyes {
+       animation: eyes 1s steps(1) alternate infinite;
+     }
+     /* emoji2 style*/
+     .emoji2 {
+       width: 160px;
+       height: 160px;
+       display: inline-block;
+       position: relative;
+       top: 25px;
+       left: 20px;
+       background: url('images/slightlysmiling.png');
+     }
+     .spin {
+       animation: spin 2s linear infinite;
+     }
+     /* emoji3 style*/
+     .emoji3{
+       width: 160px;
+       height: 160px;
+       display: inline-block;
+       position: relative;
+       top: 25px;
+       left: 40px;
+       background: url('images/emoji3.png');
+     }
+     .emoji3-e {
+       width: 160px;
+       height: 160px;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: url('images/emoji3_eyes.png');
+       background-position: 0px 0;
+     }
+     /* emoji4 style*/
+     .emoji4{
+       width: 160px;
+       height: 160px;
+       display: inline-block;
+       position: relative;
+       top: 25px;
+       left: 60px;
+       background: url('images/emoji4.png');
+     }
+     .emoji4-d {
+       width: 160px;
+       height: 160px;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: url('images/drop.png');
+       background-position: 0px 0;
+     }
+     .drop {
+       animation: drop 2s linear infinite;
+     }
+     /* emoji5 style*/
+     .emoji5{
+       width: 160px;
+       height: 160px;
+       display: inline-block;
+       position: relative;
+       top: 25px;
+       left: 80px;
+       background: url('images/emoji5.png');
+     }
+     .emoji5-h {
+       width: 160px;
+       height: 160px;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: url('images/heart.png');
+       background-position: 0px 0;
+     }
+     .heart {
+       animation: heart 2s linear infinite;
+     }
+     /* emoji1 animation*/
+     @keyframes mouth {
+       0% {background-position: -160px 0;}
+       33% {background-position: -320px 0;}
+       66% {background-position: -480px 0;}
+     }
+     @keyframes eyes {
+       0% {background-position: -640px 0;}
+       33% {background-position: -800px 0;}
+       66% {background-position: -960px 0;}
+     }
+     /* emoji2 animation*/
+    @keyframes spin {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+    @keyframes drop {
+      0% {transform: skew(0deg);}
+      25% {transform: skew(15deg);}
+      50% {transform: skew(0deg);}
+      75% {transform: skew(-15deg);}
+      100% {transform: skew(0deg);}
+    }
+    @keyframes heart {
+      0% {transform: scale(1);}
+      25% {transform: scale(0.7);}
+      50% {transform: scale(1);}
+      75% {transform: scale(1.2);}
+      100% {transform: scale(1);}
+    }
+    </style>
+  </head>
+  <body>
+   <div class="emoji1">
+    <div class="emoji-e eyes"></div>
+    <div class="emoji-m mouth"></div>
+   </div>
+   <div class="emoji2 spin"></div>
+   <div class="emoji3">
+     <div class="emoji3-e eyes"></div>
+   </div>
+   <div class="emoji4">
+    <div class="emoji4-d drop"></div>
+   </div>
+   <div class="emoji5">
+    <div class="emoji5-h heart"></div>
+   </div>
+  </body>
+</html>
